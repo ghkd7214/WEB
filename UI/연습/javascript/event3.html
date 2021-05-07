@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            margin: 50px auto;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div></div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+    // var i = 0
+    //     $("div").on("click",function(){
+    //         i++            
+    //         if(i%3==0){
+    //             $(this).css("backgroundColor","red")    
+    //         }else if(i%3==1){
+    //             $(this).css("backgroundColor","#ccc")
+    //         }else {
+    //             $(this).css("backgroundColor","blue")
+    //         }
+    //     })
+
+    var color = ["#ccc","#888","blue","red"]
+    var cc =color.length
+    var ini = 0
+    $("div").on("click",function(){
+        var i = ini % cc
+        $("div").css("backgroundColor",color[i])
+        ini++
+    })
+
+        //이렇게 짜두면 색상만 추가하면 됨
+
+
+    </script>    
+</body>
+</html>

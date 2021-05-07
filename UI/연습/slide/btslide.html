@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+
+        .wrap{
+            width: 800px;
+            height: 500px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+        }
+
+        .track{
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .track div{
+            width: 800px;
+            height: 100%;
+            line-height: 500px;
+            text-align: center;
+            font-size: 80px;
+            color: #fff; font-weight: bolder;
+        }
+
+        .track .box1{background-color: dodgerblue;}
+        .track .box2{background-color: tomato;}
+        .track .box3{background-color: magenta;}
+        .track .box4{background-color: lawngreen;}
+        .track .box5{background-color: turquoise;}
+
+        .btn{
+            width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15%;
+        }
+
+        button{padding: 10px 20px;}
+
+        .auto{
+            display: flex;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="track">
+            <div class="box1">CONTENT1</div>
+            <div class="box2">CONTENT2</div>
+            <div class="box3">CONTENT3</div>
+            <div class="box4">CONTENT4</div>
+            <div class="box5">CONTENT5</div>
+        </div>
+    </div>
+    <div class="btn">
+        <button class="prv">prev</button>
+        <button class="nxt">next</button>
+    </div>
+    
+    <button class="auto">Auto play</button>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        var boxLength = $(".track div").length;
+        var boxWidth = $(".track div").width();
+        $(".track").width(boxLength * boxWidth).css("margin-left",-boxWidth);
+        $(".track div:last-child").prependTo(".track");
+        
+        $(".nxt").on("click", function() {
+            $(".track").stop().animate({
+                "left" : -boxWidth
+            }, function() {
+                $(".track").css("left", 0);
+                $(".track div:first-child").appendTo(".track");
+            });
+        });
+
+
+
+        $(".prv").on("click", function() {
+            $(".track").stop().animate({
+                "left" : +boxWidth
+            }, function() {
+                $(".track").css("left", 0);
+                $(".track div:last-child").prependTo(".track");
+            });
+        })
+
+        $("auto").on("click",function(){
+            
+        })
+        
+        
+    </script>
+</body>
+</html>

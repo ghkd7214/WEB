@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>노드찾기</title>
+    <style>
+        *{font-size: 14px; color:#333;}
+        div, p, ul, li, h1, h3{
+            margin:10px;
+            padding:10px;
+            border:1px solid #aaa;
+        }
+        
+        .select{
+            background-color:#ccc;
+        }
+        
+        strong{
+            background-color:#ccc;
+        }
+        
+        .test1{
+            border-color:#f06;
+        }
+        
+        .test2{
+            border-color:#08f;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    div, #wrap
+    <div class="header">
+        div, .header
+        <h1>h1</h1>
+        <p class="tit">p, .tit</p><!--.tit-->
+        <p class="test2">p, .test2</p><!--.test2-->
+    </div><!--.header-->
+
+    <div class="section">
+        div, .section
+        <ul class="menu">
+            ul, .menu
+            <li>list1</li>    
+            <li>list2</li>    
+            <li class="select">list3, .select</li>
+            <li>list4</li>    
+            <li>list5</li>    
+        </ul><!--.menu-->    
+
+        <div class="box">
+            div, .box
+            <p>p</p>
+            <p>p <strong>strong</strong></p>
+            <p>p <strong>strong</strong></p>
+        </div><!--.box-->
+
+        <p class="test1">p, .test1</p>
+        <p class="test2">p, .test2</p>
+    </div><!--.section-->
+
+    <div class="content">
+        div, .content
+        <div class="con">
+            div, .con
+            <h3>h3</h3>
+
+            <ul class="list">
+                ul, .list
+                <li>li</li>    
+                <li class="test2">li, .test2</li>    
+                <li>li 
+                <strong class="st">strong, .st</strong></li>   
+            </ul><!--.list-->    
+        </div><!--.con-->
+
+        <div class="space">
+            div, .space
+            <div class="item">div, .item</div>
+            <div class="item">div, .item</div>
+            <div class="item">div, .item</div>
+        </div><!--.space-->
+    </div><!--.content-->
+  
+    <div class="footer">
+        div, .footer
+        <h1 class="flogo">h1, .flogo</h1>
+        <ul class="fmenu">
+            ul, .fmenu  
+            <li>li</li>  
+            <li class="test1">li</li>  
+            <li>li</li>  
+            <li>li 
+            <strong class="st">strong, .st</strong></li>
+        </ul><!--.fmenu--> 
+
+        <div class="cr">
+            div,.cr
+            <div class="box">
+                div, .box
+                <p>p</p>
+                <p class="test1">p, .test1</p>
+                <p class="test2">p, .test2</p>
+            </div><!--.box-->
+    
+            <div class="box">
+                div, .box
+                <p>p</p>
+                <p class="test1">p, .test1</p>
+                <p class="test2">p, .test2</p>
+            </div><!--.box-->
+        </div><!--.cr-->
+      
+    </div><!--.footer-->
+   
+    
+</div><!--#wrap-->
+ 
+   
+<script src="js/jquery-3.5.1.min.js"></script>      
+<script>
+    $("h1").on("click",function(){
+        $(this).css({
+            "color" : "green",
+            "backgroundColor":"red",
+            "borderColor":"orange"
+        })
+    })
+
+
+
+</script>   
+    
+</body>
+</html>

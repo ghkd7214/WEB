@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: skyblue;
+            margin: 50px auto;
+        }
+
+        .box1{width: 100px; height: 50px;background-color: slateblue;}
+        .box2{width: 200px; height: 100px;background-color: slateblue;}
+        .box3{width: 300px; height: 200px;background-color: slateblue;}
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        $("div").on("click",function(){
+            var w = $(this).width()
+            var h = $(this).height()
+
+            $(this).width(h).height(w)
+        }
+        )     
+    </script>
+
+</body>
+</html>

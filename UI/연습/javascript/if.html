@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+
+        var m = prompt("몸무게를 입력하세요");
+        var k = prompt("키를 입력하세요")
+
+        var q = (k-100)*0.9;
+        
+        m =parseInt(m);
+        k =parseInt(k);
+        a =isNaN(m);
+        b =isNaN(k);
+
+        if(m===null||k===null|| a===true ||b ===true){
+            alert("다시입력해주세요");
+        }
+        else if(m>=(q*1.2)){
+            alert("과체중입니다");
+        }else if(m<=(q*0.8)){
+            alert("저체중입니다");
+        }else if(m<=(q*0.9)){
+            alert("미용체중입니다");
+        }else {
+            alert("정상체중입니다");
+        }
+        
+        // prompt("전화번호를 입력해주세요");
+
+
+
+
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

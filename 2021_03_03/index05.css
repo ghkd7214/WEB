@@ -1,0 +1,95 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은고딕";
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    width: 1000px;
+    height: 1200px;
+}
+header{
+    width: 1000px;
+    height: 200px;
+    background-color: peru;
+}
+.logo{width: 300px;height: 200px;}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+#con1{
+    display: flex;
+}
+nav{
+    width: 346px;
+    height: 1000px;
+    border: 2px solid;
+    margin-left: 0;
+}
+.menu{
+    width: 100%;
+    background-color: peru;
+
+}
+.menu>li{
+    width: 286px;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+    color: seashell;
+    border-bottom: 2px solid #000;
+    font-size: 20px;
+    padding: 0 30px;
+}
+.menu>li:hover{
+    color: #000;
+}
+.sub{
+    margin-left: 80px;
+    width: 237px;
+    background-color: peru;
+    position: relative;
+    display: none;
+    z-index: 99;
+}
+.sub>li{
+    position: relative;
+    padding: 0 20px;
+    color: #fff;
+    border: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.sub>li:hover{
+    color: #000;
+}
+.sub>li:first-child{
+    border-top: 2px solid #000;
+}
+.sub>li:last-child{
+    border-bottom: 2px solid #000;
+}
+.clear{
+    clear: both;
+}
+#main{
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+}
+.imgslide{
+    width: 648px;
+    height: 1000px;
+    
+}
+.imgslide .imgs{
+    width: 648px;
+    height: 350px;
+}
+.imgs img{
+    width: 100%;
+    height: 100%;
+}

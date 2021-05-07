@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>부트스트랩 101 템플릿</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="index01.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+    </head>
+    <body>
+        <!--컨테이너 플루이드 시작-->
+        <div class="container-fluid">
+            <!--네비게이션바 시작-->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="logo/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">여행가이드소개</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">해외여행지 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">경기/강원도</a></li>
+                                    <li><a href="#">경상도</a></li>
+                                    <li><a href="#">제주도</a></li>
+                                    <li><a href="#">충청도</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">국내여행지 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">경기/강원도</a></li>
+                                    <li><a href="#">경상도</a></li>
+                                    <li><a href="#">제주도</a></li>
+                                    <li><a href="#">충청도</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <!--네비게이션바 끝-->
+
+            <!--케러셀 시작-->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+              
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/slide/images(1).jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/slide/images(2).jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/slide/images(3).jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/slide/images(4).jpg" alt="...">
+                    </div>
+                </div>
+              
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!--케러셀 끝-->
+            <div style="margin-top: 50px;"></div> <!--사이 마진-->
+            <!--공지사항 파트너 시작-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 title">
+                        <h4>공지사항</h4>
+                        <table class="table table-striped">
+                            <tr>
+                                <th class="col-xs-9 col-md-9">제목</th>
+                                <th>날짜</th>
+                            </tr>
+                            <tr>
+                                <td>해운대여행</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>태종대여행</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>이기대여행</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>영도여행</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                            <tr>
+                                <td>광안리여행</td>
+                                <td>2020.02.02</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-6 title">
+                        <h4>파트너</h4>
+                        <a href="images/partner/info.png" class="fancybox">
+                            <img src="images/partner/info.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--공지사항 파트너 끝-->
+            <div style="margin-top: 30px;"></div>
+            <!--아이콘 시작-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 " style="text-align: center;">
+                        <div class="thumbnail">
+                            <img src="images/icons/새소식.png" alt="">
+                            <div class="imgbtn">새소식</div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/icons/여행매뉴얼.png" alt="">
+                            <div class="imgbtn">여행매뉴얼</div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/icons/여행음악.png" alt="">
+                            <div class="imgbtn">여행음악</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--아이콘 끝-->
+            <div style="margin-top: 30px;"></div>
+            <footer>
+                Designed and coded by traveler
+            </footer>
+
+        </div>
+        <!--컨테이너 플루이드 끝-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <script>
+            $(".carousel").carousel({
+                interval:1000
+            })
+            $(document).ready(function(){
+                $(".fancybox").fancybox()
+            })
+        </script>
+    </body>
+</html>

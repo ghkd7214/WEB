@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul,li{
+            border: 1px solid #000000;
+
+
+        }
+    </style>
+
+
+</head>
+<body>
+        <button class="remove">remove</button>
+    
+    
+    <ul>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+        <li>list5</li>
+    </ul>
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <script>
+        $(".remove").on("click",function(){
+            $("ul il:last-child").remove();
+        })
+
+
+    </script>
+</body>
+</html>

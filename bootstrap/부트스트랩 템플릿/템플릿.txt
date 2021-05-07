@@ -1,0 +1,19 @@
+부트스트랩 작성순서
+1.기본템플릿작성
+2.cantainer-fluid 영역지정후 padding값 0 적용
+3.navbar 클래스 복붙후 크기,배경색등 지정 brand에 이미지 연결
+  navbar 클래스 옆에 navbar-fixed-top 추가
+  밑의 그림이 파고들지않도록 body{padding-top}추가할것
+4.carousel 클래스 복붙후 이미지 연결
+5.container, row, col-md-?? 클래스를 갖고 영역을 나누고 필요한 부분 삽입
+6.fancybox 제이쿼리 플러그인을 사용해서 모달창 만들어주기
+  .1 fancyapps.com/fancybox/3 접속 다운로드후 압축해제
+  .2 jquery.fancybox.js 와 jquery.fancybox.css를 각각 js와 css폴더로 복사
+  .3 문서를 링크연결코드 추가후  
+	$(document).ready(function(){      
+		$(".fancybox").fancybox()
+            })
+     메서드 구동
+
+  .4 모달창 연결할 이미지에 <a href="이미지 링크" class="fancybox"> 추가하기
+7.

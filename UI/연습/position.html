@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 1000px;
+            height: 1000px;
+            margin: 0 auto;
+            background-color: crimson;
+            position: relative;
+        }
+
+        .container div{
+            width: 150px;
+            height: 150px;
+            background-color: yellowgreen;
+            border: 5px solid #000000;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        .box1{
+            position: absolute;
+            top:0;
+            left: 500px;            
+            /* opacity: 0.5; 불투명도 */
+        }
+
+        .box2{
+            position: absolute;
+            top: 600px;
+            right: 300px;
+        }
+
+        .box4{
+            position: absolute;
+            top : 50%;
+            left : 50%;
+
+            transform:translate(-50%,-50%);
+        }
+
+        .txt1{
+            width: 300px;
+            height: 50px;
+            background-color: violet;
+            text-align: center;
+            position: relative;
+        }
+
+        .txt1 span{
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+
+
+        .txt2{
+            background-color: yellow;
+            display: inline-block;
+            padding: 10px 50px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+    </div>
+
+    <p class="txt1">
+        <span>안녕하세요<br>
+            asdasdasdas
+        </span>
+    </p>
+    <p class="txt2">안녕하세요</p>
+
+</body>
+</html>

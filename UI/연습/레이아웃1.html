@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #wrap{    
+            width: 1092px;
+            margin:0 auto;
+        }
+ /* id 로 만든 건 .wrap가아닌  #wrap로 호출 */
+
+        #wrap > div{/*top,bottom*/
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .box{
+            width: 260px;
+            height: 260px;
+            background-color: cyan;
+        }
+
+        .top .box:first-child{
+            width: 538px;
+        }
+
+        .bottom > .box{/* >을 사용시 bottom의 직계자식인 box만 영향을 받음*/
+            height: 538px;
+        }
+
+        .bottom .box{
+            margin-top: 17px;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <div id="wrap">
+        <div class="top">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+        <div class="bottom">
+            <div class="col">
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+
+            <div class="col">
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+
+            <div class="col">
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+
+            <div class="col box"></div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

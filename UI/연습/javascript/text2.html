@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{text-align: center;}
+
+
+        h1{padding: 50px;}
+
+        .output{
+            width: 1000px;
+            margin: 0 auto 50px;
+            height: 50px;
+            line-height: 50px;
+            border: 5px solid #000000;
+        }
+
+        button{
+            margin:  20px;
+            padding: 5px 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <H1>Word Match Puzzle</H1>
+    <div class="output"></div>
+    <section>
+        <button>우리나라</button>
+        <button>보우하사</button>
+        <button>동해물과</button>
+        <button>닳도록</button>
+        <button>만세</button>
+        <button>하느님이</button>
+        <button>백두산이</button>
+        <button>마르고</button>
+        
+    </section>
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <script>
+        var c ="동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세"
+
+        $("button").on("click",function(){
+            var a = $(this).text()
+            var b = $(".output").text()
+            $("div").text(b+a+" ")
+
+            if(b+a == c){
+                alert("정답입니다.")
+            }
+
+            //trim() 시작과 끝지점의 공백문자열을 제거해주는 메소드
+
+        })
+
+    </script>
+
+</body>
+</html>

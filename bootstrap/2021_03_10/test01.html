@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>부트스트랩 첫번째</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* .container-fluid{
+        background-color: pink;
+      } */
+      .container{background-color: pink;}
+      .gap{border: 1px solid red;line-height: 50px;}
+      .pad{padding: 5px;border: 1px solid blue;}
+    </style>
+  </head>
+  <body>
+
+    <!-- <div class="container-fluid">  
+      내용 들어가기...  
+    </div> -->
+     <!-- container-fluid는 화면의 100%를 사용함-->
+
+
+    <div class="container">     <!-- container는 화면의 70%를 사용함-->
+      <div class="row pad">
+        <div class="col-md-3 gap">
+          <img src="logo.png" class="img-responsive">
+        </div>
+        <div class="col-md-9 gap">menu</div>
+        <div class="col-md-12 gap">이미지슬라이드</div>
+        <div class="col-md-6 gap">공지사항</div>
+        <div class="col-md-6 gap">파트너</div>
+        <div class="col-md-6 gap">이미지아이콘</div>
+        <div class="col-md-6 gap">Q&A</div>
+        <div class="col-md-12 gap">바닥글</div>
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+<!-- 
+데스크탑(lg): 1200px 이상
+데스크탑(md): 992px~ 1199px
+태블릿PC(sm): 768px ~991px
+스마트폰(xs): ~767px  
+-->

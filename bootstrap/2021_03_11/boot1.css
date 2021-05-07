@@ -1,0 +1,45 @@
+body{margin-top: 82px;}
+.container-fluid{padding: 0px;}
+.navbar{
+    height: 82px;
+    background-color: #fff;
+    font-size: 1.2em;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+.navbar-collapse{
+    background-color: #fff;
+}
+.navbar-toggle{margin-top: 40px;}
+.icons{
+    padding: 20px;
+    font-size: 30px;
+    background-color: orange;
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 15px;
+    transition: all 0.4s;
+    float: left;
+}
+.icons:hover{
+    background-color: #18709c;
+}
+.icontxt h4{color: #18709c;
+    font-weight: bold;
+}
+header{
+    text-align: center;
+    padding: 40px 0;
+}
+header small{
+    color: #fff;
+}
+header p{
+    color: #c0c0c0;
+}
+.content1{
+    background:url("imgs/slide1_bg.jpg") no-repeat fixed ;
+    background-size: cover;
+}
+.book1, .book2, .book3{float: left;}
+.book2, .book3{margin-left: -100px;}

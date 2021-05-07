@@ -1,0 +1,6 @@
+1.bootstrapk.com 접속
+2.시작하기메뉴 클릭 후 기본 템플릿 긁어오기
+3.bootstrap.min.css 파일과 bootstrap.min.js 파일을 내폴더로 복사해오기(부트스트랩다운로드버튼 클릭)
+4.container-fluid, container, row, col-??숫자
+				??(lg, md, sm, xs)
+				숫자(1~12)

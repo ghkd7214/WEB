@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.divparent{
+			width: 300px;
+			height: 300px;
+			border: 1px solid #000;
+			position: relative;
+		}
+		.div1{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			position: relative;
+			
+		}
+		.div2{
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			position: absolute;
+			top: 50px;
+			left: 50px
+		}
+		.div3{
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			position: static;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="divparent">
+		<div class="div2"></div>
+	</div>
+	<div class="div3"></div>
+
+</body>
+</html>
+
+
+<!--
+ position 
+1.static : position의 기본속성  따로 지정하지않더라도 static이 기본
+2.relative
+3.absolute
+4.fixed : 좌표를 주면 그 좌표에그대로 찍힘 (커서개념 x)
+
+커서를 어떻게 두느냐로 이해하는 방식 
+1.static : 다음 올 녀석에게 커서를 준다
+2.relative : 다음 올 녀석에게 커서를 준다
+3.absolute : 커서를 자신이 갖고있는다
+
+*좌표를 찍는 방식으로 이해한다.(좌표에서만 relative와 absolute의 사전적인 의미가 발현된다)
+1.static : 좌표를 줄 수 없음
+2.relative :  좌표를 줄 수 있다  단, 실체는 움직이지 않고 그림자만 움직인다.(커서는 본래의 위치에 있다는 소리)
+해당 커서 다음에 좌표를 찍고
+
+3.absolute :  좌표를 줄 수 있다  단, 실체는 움직이지 않고 그림자만 움직인다.해당 커서가 아닌 웹브라우저 절대값에 기준해서 움직인다.
+
+
+*absolute 길들이기
+좌표를 찍을때 무조건 다른 커서 개무시하고 절대좌표로 뛰쳐나가려하는 속성
+부모클래스안에 가두어두면 부모클래스의 좌표를 기준으로 말을 듣는다. 부모클래스의 자격은 relative나 absolute가 올수있다
+
+
+
+
+
+
+
+
+
+
+
+
+-->

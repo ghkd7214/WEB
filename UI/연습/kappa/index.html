@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>  
+    <header>
+        <h1>
+            <a href="#">
+                <img class="m" src="images/logo_m.gif">
+                <img class="pc" src="images/logo_d.gif">
+            </a>
+        </h1>
+        <button class="opn">
+            <img src="images/btn_menu.gif">
+        </button>
+        <button class="my">
+            <img class="m" src="images/btn_member_m.gif">
+            <img class="pc" src="images/btn_member.gif">
+        </button>
+        <nav>
+            <div class="util">
+                <button class="cls">
+                    <img src="images/btn_menu_close.gif">
+                </button>
+                <div class="search">
+                    <input type="text" placeholder="검색어를 입력하세요.">
+                    <button class="submit">
+                        <img class="pc" src="images/btn_srh.gif">
+                        <img class="m" src="images/btn_srh_m.gif">
+                    </button>
+                </div>
+            </div>
+            <ul class="gnb">
+                <li><a href="#">COLLECTION</a></li>
+                <li><a href="#">ORIGIN</a></li>
+                <li><a href="#">4TEAM</a></li>
+                <li><a href="#">LIVE</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">CAMPAIGN</a></li>
+                <li><a href="#">POP-UP STORE</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
+    <script>
+        var nav = document.querySelector("nav")
+        var opn = document.querySelector(".opn")
+        var cls = document.querySelector(".cls")
+
+        opn.addEventListener("click", function() {
+            nav.style.left = 0
+        });
+        cls.addEventListener("click", function() {
+            nav.style.left = "-100%"
+        });
+    </script>
+</body>
+</html>

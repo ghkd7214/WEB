@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function hi(){
+            alert("안녕하세요")
+            document.write("안녕하계세요")
+        }
+
+        hi()
+
+        function namecard(name,team,num){
+            document.write(`
+                이름 : ${name}<hr>
+                부서명 : ${team}팀<hr>
+                연락처 : ${num}<hr>
+            `);
+        }
+
+        namecard("김","영업","123-4566-1234")
+        namecard("이","재무","789-2564-1234")
+
+
+    </script>
+
+
+
+</body>
+</html>

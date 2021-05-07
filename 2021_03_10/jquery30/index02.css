@@ -1,0 +1,33 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+#con1{
+    position: relative;
+    width: 70%;
+    background-color: aliceblue;
+    padding: 5px;
+    border: 1px solid #000;
+}
+.thumb{
+    width: 22%;
+    float: left;
+}
+
+
+@media (max-width:991px){
+    #con1{width:50%}
+    .thumb{
+        
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:767px){
+
+}

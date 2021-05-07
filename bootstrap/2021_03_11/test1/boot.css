@@ -1,0 +1,42 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    margin-top: 65px;
+}
+/* .container-fluid{padding: 0px;} */
+.navbar-brand{padding: 0px;}
+.navbar{
+    height: 65px;
+    background-color: #fff;
+    font-size: 1.2em;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+.navbar-nav{
+    margin-bottom: 0px;
+}
+.navbar-nav li:hover{background-color: khaki;}
+.navbar-collapse {
+    margin-top: 8px;
+    background-color: #fff;
+    /* border-bottom: 1px solid #aaa; */
+}
+.navbar-toggle{margin-top: 14px;}
+.icons{
+    font-size: 3em;
+    float: left;
+    padding: 20px;
+    background-color: orange;
+    border-radius: 100%;
+    border: 3px solid orange;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all 0.4s;
+}
+
+.icons:hover{
+    background-color: #18709c;
+}

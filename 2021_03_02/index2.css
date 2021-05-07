@@ -1,0 +1,224 @@
+*{
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    font-family: "맑은고딕";
+}
+
+a{
+    text-decoration:none;
+    color: inherit;
+}
+
+header{
+    display: flex;
+    width: 1000px;
+    height: 150px;
+    justify-content: center;        /*수평정렬*/
+    align-items: center;            /*수직정렬*/
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 99;
+    background-color: #fff;
+
+}
+
+.logo{
+    width: 250px;
+    height: 110px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 750px;
+    height: 110px;
+}
+
+.menu{
+    width: 600px;
+    margin-top: 30px;
+    margin-right: 0;
+}
+
+.menu li{
+    width: 200px;
+    float: left;
+    padding: 7px 0;
+    text-align: center;
+    position: relative;
+}
+
+.menu li:hover{
+    background-color: #18709c;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.submenu{
+    position: absolute;
+    width: 100%;
+    margin-top: 7px;
+    display: none;
+    color: #333;
+    z-index: 10;
+}
+
+.submenu li{
+    padding: 7px 0;
+    text-align: center;
+    background-color:#fff;
+}
+
+.submenu li:hover{
+    background-color: #18709c;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+#imgslide{
+    width: 1000px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 150px;
+}
+
+.imgs{
+    width: 1000px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.imgs img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1.8s;
+}
+
+.welcome{
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    line-height: 50px;
+    z-index: 1;
+    position: absolute;
+}
+
+#con1{
+    width: 1000px;
+    height: 400px;
+    display: flex;
+}
+
+.notice{
+    width: 500px;
+    text-align: center;
+
+}
+
+.table{
+    margin-top: 50px;
+    width: 450px;
+    border-top: 2px solid #666;
+    border-bottom: 2px solid #666;
+    border-collapse: collapse;
+}
+
+.table tr th{
+    padding: 5px 0;
+    border-bottom: 1px solid #666;
+}
+
+.table tr td:first-child{
+    border-right: 1px solid #666;
+}
+
+.table tr td{
+    padding: 5px 0;
+    border-bottom: 1px solid #666;
+}
+
+.table tr:nth-child(2n){
+    background-color: #eee;
+}
+
+.table tr:hover:not(:first-child){
+    background-color:gray;
+}
+.partner{
+    text-align: center;
+    width: 500px;
+}
+
+.partner img{
+    width: 90%;
+    margin-top: 50px;
+}
+
+#con2{
+    width: 1000px;
+    height: 300px;
+    display: flex;
+}
+
+.icons{
+    width: 250px;
+    height: 250px;
+    border: 1px solid gray;
+    text-align: center;
+    
+}
+
+.imgbtn{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #18609c;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+
+.imgbtn:hover{
+    opacity: 0.5;       /*투명도*/
+}
+
+.icons img{
+    margin-top: 30px;
+}
+
+#wrap{
+    width: 1000px;
+    min-height: 700px;
+    margin-top: 150px;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: lightblue;
+}
+
+.footerP{
+    width: 1000px;
+    height: 150px;
+    display: flex;
+}
+
+.footerL{
+    width: 500px;
+    height: 150px;
+}
+
+.footerR{
+    width: 500px;
+    height: 150px;
+}

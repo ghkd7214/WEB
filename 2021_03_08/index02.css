@@ -1,0 +1,60 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은고딕";
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    width: 1000px;
+    height: 150px;
+    background-color: royalblue;
+}
+#roll{
+    width: 1000px;
+    height: 86px;
+    position: relative;
+}
+.main{
+    width: 908px;
+    height: 84px;
+    display: flex;
+}
+.prev,.next{
+    line-height: 69px;
+    margin: 0;
+    width: 30px;
+    height: 84px;
+    background-color: #ddd;
+    font-size: 3em;
+    cursor: pointer;
+    text-align: center;
+}
+.prev.off,.next.off{
+    opacity: 0.5;
+    cursor: default;
+}
+.main .con{
+    width: 848px;
+    height: 84px;
+    overflow: hidden;
+}
+.main .con .bar{
+    width: 1300px;
+    height: 84px;
+    position: relative;
+    display: flex;
+}
+.main .imgs{
+    margin: 0;
+    width: 106px;
+    height: 84px;
+    text-align: center;
+}
+img{
+    margin-top: 23px;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <header>
+        <h1>LOGO</h1>
+        <button class="opn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <button class="my">
+            my<br>page
+        </button>
+        <nav>
+            <ul class="gnb">
+                <li>ABOUT</li>
+                <li>asd</li>
+                <li>sssd</li>
+                <li>asda</li>
+                <li>asdad</li>
+            </ul>
+
+            <ul class="util">
+                <li>회원가입</li>
+                <li>로그인</li>
+                <li>장바구니</li>
+                <li>마이페이지</li>
+                <li>정보</li>
+            </ul>
+            <button class="cls">
+                close
+            </button>
+        </nav>
+
+    </header>
+
+    <script>
+        var nav = document.querySelector("nav")
+        var opn = document.querySelector(".opn")
+        var cls = document.querySelector(".cls")
+
+        opn.addEventListener("click", function(){
+            nav.style.left = 0
+        })
+
+        cls.addEventListener("click", function(){
+            nav.style.left = "-100%"
+        })
+
+    </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function(){
+            var imgleft;
+            var currindex=0;
+
+            $(".prev").addClass("off")
+            $(".next").click(function(){
+                if(currindex>-3){
+                currindex--; 
+                imgleft=currindex*50;               
+                $(".imgs").css("margin-left",imgleft)
+                $(".prev").removeClass("off")
+                }
+                if(currindex==-3){
+                    $(".next").addClass("off")
+                }
+            })
+            $(".prev").click(function(){
+                if(currindex<0){
+                currindex++; 
+                imgleft=currindex*50;               
+                $(".imgs").css("margin-left",imgleft)
+                $(".next").removeClass("off")
+                }
+                if(currindex==0){
+                    $(".prev").addClass("off")
+                }
+            })
+            
+        })
+    </script>
+    <style>
+        #slides{
+            width: 460px;
+            height: 40px;
+            display: flex;
+        }
+        .prev, .next{
+            width: 30px;
+            height: 40px;
+            text-align: center;
+            line-height: 27px;
+            font-size: 3em;
+            cursor: pointer;
+            background-color: #ddd;
+        }
+        .prev.off,.next.off{
+            opacity: 0.5;
+            cursor: default;
+        }
+        #imgslide{
+            width: 400px;
+            height: 40px;
+            position: relative;
+            overflow: hidden;
+            background-color: #eee;
+        }
+        .imgs{
+            width: 550px;
+            height: 40px;
+            position: absolute;
+        }
+        .imgs img{
+            width: 50px;
+            height: 40px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="slides">
+        <div class="prev">
+            &#8249
+        </div>
+        <div id="imgslide">
+            <div class="imgs">
+                <img src="images/2.png" alt="">
+                <img src="images/1.png" alt="">
+                <img src="images/3.png" alt="">
+                <img src="images/4.png" alt="">
+                <img src="images/5.png" alt="">
+                <img src="images/6.png" alt="">
+                <img src="images/7.png" alt="">
+                <img src="images/8.png" alt="">
+                <img src="images/9.png" alt="">
+                <img src="images/10.png" alt="">
+                <img src="images/11.png" alt="">
+            </div>
+        </div>
+        <div class="next">
+            &#8250
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .button{
+            width: 150px;
+            height: 50px;
+            background-color: blue;
+            color:#000000;
+            text-align: center;
+
+
+            border: 4PX solid orange;
+            
+            /* border-width: 4px;
+            border-color: orange;
+            border-style: solid; 
+            위와 같음
+            */
+
+            /*border-radius: 50%;  높이값 150px의 절반인 75px을 입력해도 원이됨 */
+            line-height: 50px;
+            border-radius: 50px;
+
+            transition: background 0.5s;/*배경색이 0.5초에 걸쳐서 변화 */
+        }
+
+
+        .button:hover{ /*마우스를 가져갔을때 발생*/
+            background-color: steelblue;
+        }
+
+        .button:active{  /*마우스클릭시 발생*/
+            color: white;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="button">click me</div>
+
+
+
+</body>
+</html>

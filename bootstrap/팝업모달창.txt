@@ -1,0 +1,15 @@
+팝업모달창은 외부플러그인 fancybox를 사용할것
+1.fancyapps.com/fancybox/3
+다운로드받고 압축풀어서
+ 
+2.jquery.fancybox.js를 jc파일로 붙여넣기
+
+3.jquery.fancybox.css를 css폴더로 붙여넣기
+
+4.
+$(document).ready(funtion(){
+	$(".fancybox").fancybox();		
+});
+를 추가하기
+
+5.a 태그에 fancybox 클래스를 플러그인

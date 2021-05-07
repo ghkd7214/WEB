@@ -1,0 +1,176 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은고딕";
+}
+img{
+    width: inherit;
+    height: inherit;
+}
+a{
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+header{
+    width: 1000px;
+    height: 110px;
+    display: flex;
+}
+.logo{
+    width: 300px;
+    height: 110px;
+}
+nav{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    margin-top: 20px;
+    width: 600px;
+    height: 50px;
+    background-color: lightgray;
+}
+.menu>ul>li{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+}
+.menu li:hover{
+    color: #fff;
+}
+.menu .sub{
+    width: 150px;
+    line-height: 40px;
+    display: none;
+    position: relative;
+    z-index: 99;
+    background-color: #fff;
+}
+.sub li{
+    color: #000;
+    height: 40px;
+}
+.sub li:hover{
+    background-color: lightgray;
+}
+#imgslide{
+    position: relative;
+    width: 1000px;
+    height: 350px;
+    overflow: hidden;
+}
+
+#imgslide .imgs{
+    width: 5000px;
+    height: 350px;
+    position: absolute;
+}
+.imgs img{
+    width: 1000px;
+    float: left;
+}
+.dot{
+    position: relative;
+    width: 175px;
+    height: 35px;
+    text-align: center;
+    margin: 20px auto;
+}
+.dot>a{
+    width: 15px;
+    height: 15px;
+}
+.dot>ul>li{
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+}
+#con1{
+    width: 1000px;
+    height: 220px;
+    position: relative;
+    display: flex;
+    /* background-color: #ef4243; */
+}
+.gong{
+    width: 500px;
+    margin-top: 13px;
+}
+.gong h3{
+    text-align: center;
+    padding: 10px;
+}
+table{
+    border-collapse:collapse ;
+}
+table tr{
+    display: inline-block;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+table tr td:first-child{
+    width: 420px;
+}
+table tr:nth-child(2n){
+    background-color: rgb(198, 201, 204);
+}
+table tr:hover{
+    background-color: moccasin;
+}
+.partner{
+    margin-top: 13px;
+    width: 500px;
+}
+.partner h3{
+    text-align: center;
+    padding: 10px;
+}
+.partner .imgs{
+    width: 500px;
+    height: 50px;
+    display: flex;
+}
+.partner img{
+    width: 400px;
+    height: 140px;
+    cursor: pointer;
+}
+#modal{
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.pp{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 500px;
+    /* height: 300px; */
+    background-color: #fff;
+    text-align: center;
+}
+.pp .imgs{
+    width: 500px;
+    height: 150px;
+    display: flex;
+}
+.pp img{
+    width: 500px;
+}
+.ppp{
+    background-color: royalblue;
+    /* display: flex; */
+}
+.ppp .ppbtn{
+    margin:0;
+    padding: 6px 12px;
+}

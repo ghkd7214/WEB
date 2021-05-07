@@ -1,0 +1,59 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은고딕";
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#partner{
+    width: 250px;
+    cursor: pointer;
+}
+
+#partner img{
+    width: 100%;
+    display: block;
+}
+
+#modal{
+   z-index: 1;
+   background-color: rgba(0, 0, 0, 0.7);
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   display: none;
+/*zd는 background positoin이 hei top*/
+}
+
+#modal.active{      /*modal에 active라는 엑티브를 연결시켜준다 필요시 이를 제거하고 
+    부탁하는 효과로 모달창이 나타났다 사라진다*/
+    display: block;
+}
+
+#modal .body{
+    width: 500px;
+    margin-top: 50px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+#modal .body img{
+    display: block;
+}
+
+#modal .body .btnClose{
+    padding: 6px 12px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
